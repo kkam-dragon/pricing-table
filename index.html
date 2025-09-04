@@ -1,218 +1,223 @@
-<div class="bundle-pricing-780">
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>온 가족 건강 루틴 패키지 – 가격 안내</title>
+<style>
+/* ====== Design Tokens ====== */
+:root{
+  --w: 780px;
+  --bg: #fffdfa;
+  --ink:#222;
+  --sub:#6f684f;
+  --line:#efe6d2;
+  --muted:#9a978d;
+
+  --brand-best:#ff742c;     /* 5팩 배지 */
+  --brand-pop:#1f6fff;      /* 8팩 배지 */
+  --accent:#ffd45c;         /* 할인 원형 뱃지 */
+  --cta:#1f6fff;
+}
+
+/* ====== Base ====== */
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#fff}
+.wrapper{width:var(--w);margin:0 auto;padding:22px;font-family:Pretendard, "Noto Sans KR", Apple SD Gothic Neo, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;color:var(--ink)}
+a{text-decoration:none}
+
+/* ====== Hero ====== */
+.hero{background:linear-gradient(135deg,#fff4d8,#fffdf3 55%,#ffffff);border:1px solid var(--line);border-radius:18px;padding:28px 24px;margin-bottom:18px}
+.hero h1{margin:0 0 6px;font-size:28px;line-height:1.2}
+.hero .sub{margin:0;color:var(--sub);font-size:16px}
+.hero .chips{margin-top:8px;display:flex;gap:8px;flex-wrap:wrap}
+.chip{font-size:13px;color:#5b4b17;background:#fff3c2;border:1px solid #ffe9a3;padding:6px 10px;border-radius:999px}
+
+/* ====== Grid ====== */
+.grid{display:flex;flex-direction:column;gap:12px}
+.card{position:relative;display:flex;gap:16px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px;box-shadow:0 4px 10px rgba(0,0,0,.04)}
+.thumb{width:160px;min-width:160px;height:104px;border-radius:12px;background:linear-gradient(135deg,#eef7ff,#f5fbff);display:flex;align-items:center;justify-content:center}
+.thumb span{font-weight:800;color:#2b74ff;letter-spacing:.2px;font-size:18px}
+.body{flex:1}
+.row1{display:flex;align-items:center;justify-content:space-between;margin:2px 0 6px}
+.label{color:#6d613f;font-size:14px}
+.off-bubble{width:62px;height:62px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;font-weight:800;color:#7a5a12}
+.row2{display:flex;align-items:flex-end;justify-content:space-between;gap:18px}
+.title{font-size:18px;font-weight:700}
+.meta{color:#777;font-size:13px;margin-top:4px}
+.linethrough{color:#b7b7b7;text-decoration:line-through;text-align:right;font-size:13px}
+.price{font-size:24px;font-weight:800;line-height:1.1;text-align:right}
+.row3{display:flex;align-items:center;justify-content:space-between;margin-top:10px;gap:8px}
+.bullets{margin:0;padding-left:18px;color:#4a4a4a;font-size:13px}
+.btn{display:inline-block;padding:10px 16px;border-radius:10px;background:#f0f0f0;color:#111;font-weight:700;border:1px solid #e5e5e5;transition:.15s}
+.btn:hover{transform:translateY(-1px)}
+.btn.cta{background:var(--cta);border-color:var(--cta);color:#fff;box-shadow:0 6px 14px rgba(31,111,255,.18)}
+
+/* ====== Highlights / Ribbons ====== */
+.card.highlight{border-color:#d8e6ff;box-shadow:0 6px 16px rgba(31,111,255,.08)}
+.card.best .thumb{background:linear-gradient(135deg,#ffeede,#fff7f0)}
+.card.popular .thumb{background:linear-gradient(135deg,#e6f7ff,#eefcff)}
+.ribbon{position:absolute;top:-10px;left:-10px;background:#111;color:#fff;font-size:12px;padding:6px 10px;border-radius:10px;box-shadow:0 4px 8px rgba(0,0,0,.12);letter-spacing:.3px}
+.card.best .ribbon{background:var(--brand-best)}
+.card.popular .ribbon{background:var(--brand-pop)}
+.muted{opacity:.92}
+
+/* ====== Footer Note ====== */
+.note{margin:10px 2px 0;color:#8a8a8a;font-size:12px}
+
+/* Optional: narrow screens (임시) */
+@media (max-width:820px){ .wrapper{width:100%;padding:16px} }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <!-- HERO -->
   <section class="hero">
-    <div class="hero-badge">NEW</div>
-    <h1>온 가족 멀티팩 혜택</h1>
-    <p class="sub">사면 살수록 이득! <strong>최대 25% 할인</strong> · <span class="freefeel">5개 = 1개 공짜 느낌 / 8개 = 2개 공짜 느낌</span></p>
+    <h1>온 가족 건강 루틴 패키지</h1>
+    <p class="sub">지속 섭취가 중요합니다. <strong>최대 62% 할인</strong>으로 루틴을 시작해 보세요.</p>
+    <div class="chips">
+      <span class="chip">5개월 = <strong>1개월 무료 느낌</strong></span>
+      <span class="chip">8개월 = <strong>2개월 무료 느낌</strong></span>
+      <span class="chip">꾸준히 먹을수록 <strong>단가↓ 혜택↑</strong></span>
+    </div>
   </section>
 
+  <!-- GRID -->
   <section class="grid">
-    <!-- 2 pack -->
+    <!-- 1 -->
     <article class="card">
-      <div class="thumb"><span>2 PACK</span></div>
+      <div class="thumb"><span>1개월</span></div>
       <div class="body">
-        <div class="row1">
-          <div class="label">작은 절약</div>
-          <div class="off-bubble">5%</div>
-        </div>
+        <div class="row1"><div class="label">체험용</div><div class="off-bubble">49%</div></div>
         <div class="row2">
           <div class="left">
-            <div class="title">2개 구성</div>
-            <div class="meta">개당 19,190원</div>
+            <div class="title">1개</div>
+            <div class="meta">개당 20,200원</div>
           </div>
           <div class="right">
-            <div class="linethrough">정가 40,400원</div>
-            <div class="price">38,380원</div>
+            <div class="linethrough">정가 39,900원</div>
+            <div class="price">20,200원</div>
           </div>
         </div>
         <div class="row3">
-          <ul class="bullets">
-            <li>첫 구매 맛보기용 추천</li>
-            <li>가볍게 시작, 부담은 줄여요</li>
-          </ul>
-          <a class="btn" href="#opt-2">지금 선택</a>
+          <ul class="bullets"><li>부담 없이 효과 체험</li></ul>
+          <a class="btn" href="#">선택</a>
         </div>
       </div>
     </article>
 
-    <!-- 3 pack -->
+    <!-- 2 -->
     <article class="card">
-      <div class="thumb"><span>3 PACK</span></div>
+      <div class="thumb"><span>2개월</span></div>
       <div class="body">
-        <div class="row1">
-          <div class="label">알뜰 구매</div>
-          <div class="off-bubble">10%</div>
-        </div>
+        <div class="row1"><div class="label">가볍게</div><div class="off-bubble">51%</div></div>
         <div class="row2">
-          <div class="left">
-            <div class="title">3개 구성</div>
-            <div class="meta">개당 18,180원</div>
-          </div>
-          <div class="right">
-            <div class="linethrough">정가 60,600원</div>
-            <div class="price">54,540원</div>
-          </div>
+          <div class="left"><div class="title">2개</div><div class="meta">개당 19,190원</div></div>
+          <div class="right"><div class="linethrough">정가 79,800원</div><div class="price">38,380원</div></div>
         </div>
         <div class="row3">
-          <ul class="bullets">
-            <li>선물+자사용 함께 준비</li>
-            <li>초기 재고 확보에 딱</li>
-          </ul>
-          <a class="btn" href="#opt-3">지금 선택</a>
+          <ul class="bullets"><li>2개월 꾸준히 → 변화 시작</li></ul>
+          <a class="btn" href="#">선택</a>
         </div>
       </div>
     </article>
 
-    <!-- 4 pack -->
+    <!-- 3 -->
     <article class="card">
-      <div class="thumb"><span>4 PACK</span></div>
+      <div class="thumb"><span>3개월</span></div>
       <div class="body">
-        <div class="row1">
-          <div class="label">실속 선택</div>
-          <div class="off-bubble">15%</div>
-        </div>
+        <div class="row1"><div class="label">알뜰</div><div class="off-bubble">54%</div></div>
         <div class="row2">
-          <div class="left">
-            <div class="title">4개 구성</div>
-            <div class="meta">개당 17,170원</div>
-          </div>
-          <div class="right">
-            <div class="linethrough">정가 80,800원</div>
-            <div class="price">68,680원</div>
-          </div>
+          <div class="left"><div class="title">3개</div><div class="meta">개당 18,180원</div></div>
+          <div class="right"><div class="linethrough">정가 119,700원</div><div class="price">54,540원</div></div>
         </div>
         <div class="row3">
-          <ul class="bullets">
-            <li>가성비·재구매 준비 세트</li>
-            <li>꾸준한 루틴 입문</li>
-          </ul>
-          <a class="btn" href="#opt-4">지금 선택</a>
+          <ul class="bullets"><li>3개월 루틴으로 안정적 체감</li></ul>
+          <a class="btn" href="#">선택</a>
         </div>
       </div>
     </article>
 
-    <!-- 5 pack (BEST VALUE) -->
+    <!-- 4 -->
+    <article class="card">
+      <div class="thumb"><span>4개월</span></div>
+      <div class="body">
+        <div class="row1"><div class="label">실속</div><div class="off-bubble">56%</div></div>
+        <div class="row2">
+          <div class="left"><div class="title">4개</div><div class="meta">개당 17,170원</div></div>
+          <div class="right"><div class="linethrough">정가 159,600원</div><div class="price">68,680원</div></div>
+        </div>
+        <div class="row3">
+          <ul class="bullets"><li>루틴 적응기, 가성비 구성</li></ul>
+          <a class="btn" href="#">선택</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 5 (BEST VALUE) -->
     <article class="card highlight best">
       <div class="ribbon">BEST VALUE</div>
-      <div class="thumb"><span>5 PACK</span></div>
+      <div class="thumb"><span>5개월</span></div>
       <div class="body">
         <div class="row1">
-          <div class="label"><strong>“5개 사면 1개 공짜 느낌”</strong></div>
-          <div class="off-bubble">20%</div>
+          <div class="label"><strong>“5개월 루틴 + 1개월 무료 느낌”</strong></div>
+          <div class="off-bubble">59%</div>
         </div>
         <div class="row2">
-          <div class="left">
-            <div class="title">5개 구성</div>
-            <div class="meta">개당 16,160원</div>
-          </div>
-          <div class="right">
-            <div class="linethrough">정가 101,000원</div>
-            <div class="price">80,800원</div>
-          </div>
+          <div class="left"><div class="title">5개</div><div class="meta">개당 16,160원</div></div>
+          <div class="right"><div class="linethrough">정가 199,500원</div><div class="price">80,800원</div></div>
         </div>
         <div class="row3">
           <ul class="bullets">
-            <li>가장 똑똑한 선택, 1개가 그냥 따라와요</li>
-            <li>선물·공유용으로 부담 ↓ 만족 ↑</li>
+            <li><strong>꾸준한 5개월 루틴 완성</strong> – 효과를 느끼기 시작하는 구간</li>
+            <li><strong>1개월치가 무료로 따라오는</strong> 가장 합리적인 선택</li>
           </ul>
-          <a class="btn cta" href="#opt-5">지금 선택 (추천)</a>
+          <a class="btn cta" href="#">지금 선택</a>
         </div>
       </div>
     </article>
 
-    <!-- 6 pack (Neutral / 21%) -->
+    <!-- 6 (neutral) -->
     <article class="card muted">
-      <div class="thumb"><span>6 PACK</span></div>
+      <div class="thumb"><span>6개월</span></div>
       <div class="body">
-        <div class="row1">
-          <div class="label">일반 할인</div>
-          <div class="off-bubble">21%</div>
-        </div>
+        <div class="row1"><div class="label">일반 할인</div><div class="off-bubble">60%</div></div>
         <div class="row2">
-          <div class="left">
-            <div class="title">6개 구성</div>
-            <div class="meta">개당 15,958원</div>
-          </div>
-          <div class="right">
-            <div class="linethrough">정가 121,200원</div>
-            <div class="price">95,748원</div>
-          </div>
+          <div class="left"><div class="title">6개</div><div class="meta">개당 15,953원</div></div>
+          <div class="right"><div class="linethrough">정가 239,400원</div><div class="price">95,720원</div></div>
         </div>
         <div class="row3">
-          <ul class="bullets">
-            <li>무난한 할인, 혜택은 평이</li>
-            <li>더 큰 혜택은 5개/8개에서!</li>
-          </ul>
-          <a class="btn" href="#opt-6">선택</a>
+          <ul class="bullets"><li>무난한 구성, <strong>진짜 혜택은 5/8개월</strong></li></ul>
+          <a class="btn" href="#">선택</a>
         </div>
       </div>
     </article>
 
-    <!-- 8 pack (MOST POPULAR) -->
+    <!-- 8 (MOST POPULAR) -->
     <article class="card highlight popular">
       <div class="ribbon">MOST POPULAR</div>
-      <div class="thumb"><span>8 PACK</span></div>
+      <div class="thumb"><span>8개월</span></div>
       <div class="body">
         <div class="row1">
-          <div class="label"><strong>“8개 사면 2개 공짜 느낌”</strong></div>
-          <div class="off-bubble">25%</div>
+          <div class="label"><strong>“8개월 장기 섭취 = 2개월 무료 느낌”</strong></div>
+          <div class="off-bubble">62%</div>
         </div>
         <div class="row2">
-          <div class="left">
-            <div class="title">8개 구성</div>
-            <div class="meta">개당 15,150원</div>
-          </div>
-          <div class="right">
-            <div class="linethrough">정가 161,600원</div>
-            <div class="price">121,200원</div>
-          </div>
+          <div class="left"><div class="title">8개</div><div class="meta">개당 15,150원</div></div>
+          <div class="right"><div class="linethrough">정가 319,200원</div><div class="price">121,200원</div></div>
         </div>
         <div class="row3">
           <ul class="bullets">
-            <li>가장 큰 혜택, 단가 최저</li>
-            <li>재고 소진 전, 지금 담아두세요</li>
+            <li><strong>장기 복용으로 효과 극대화</strong> – 루틴 완주를 위한 최적 구간</li>
+            <li><strong>2개월 무료 느낌 + 단가 최저</strong></li>
           </ul>
-          <a class="btn cta" href="#opt-8">최대 혜택 받기</a>
+          <a class="btn cta" href="#">최대 혜택 받기</a>
         </div>
       </div>
     </article>
   </section>
 
-  <p class="note">※ 표시 가격은 예시이며, 판매 정책에 따라 변동될 수 있습니다.</p>
+  <p class="note">※ 표시는 예시이며 판매 정책에 따라 변경될 수 있습니다.</p>
 </div>
-
-<style>
-.bundle-pricing-780 { width:780px; margin:0 auto; font-family:Pretendard, "Noto Sans KR", Apple SD Gothic Neo, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; color:#222; }
-.bundle-pricing-780 * { box-sizing:border-box; }
-.hero { position:relative; background:linear-gradient(135deg,#fde8b7,#fff6d9 45%,#ffffff); border:1px solid #f2e4b8; padding:28px 24px; border-radius:18px; margin-bottom:18px; }
-.hero-badge { position:absolute; top:14px; right:14px; background:#111; color:#fff; font-size:12px; padding:6px 10px; border-radius:999px; letter-spacing:.3px; }
-.hero h1 { margin:0 0 6px; font-size:28px; line-height:1.2; }
-.hero .sub { margin:0; color:#5c5135; font-size:16px; }
-.hero .sub .freefeel { background:#fff3c2; padding:2px 8px; border-radius:8px; }
-
-.grid { display:flex; flex-direction:column; gap:12px; }
-.card { position:relative; display:flex; gap:16px; background:#fff; border:1px solid #eee7d7; border-radius:16px; padding:14px; box-shadow:0 4px 10px rgba(0,0,0,.04); }
-.card .thumb { width:160px; min-width:160px; height:104px; border-radius:12px; background:linear-gradient(135deg,#eaf3ff,#eef8ff); display:flex; align-items:center; justify-content:center; font-weight:800; color:#2b74ff; letter-spacing:.5px; }
-.card .thumb span{ font-size:18px; }
-.body { flex:1; }
-.row1{ display:flex; align-items:center; justify-content:space-between; margin:2px 0 6px; }
-.label{ color:#6d613f; font-size:14px; }
-.off-bubble{ width:58px; height:58px; border-radius:50%; background:#ffdb67; display:flex; align-items:center; justify-content:center; font-weight:800; color:#7a5a12; }
-.row2{ display:flex; align-items:flex-end; justify-content:space-between; gap:18px; }
-.title{ font-size:18px; font-weight:700; }
-.meta{ color:#7a7a7a; font-size:13px; margin-top:4px; }
-.linethrough{ color:#b3b3b3; text-decoration:line-through; text-align:right; font-size:13px; }
-.price{ font-size:24px; font-weight:800; line-height:1.1; text-align:right; }
-.row3{ display:flex; align-items:center; justify-content:space-between; margin-top:10px; gap:8px; }
-.bullets{ margin:0; padding-left:18px; color:#4a4a4a; font-size:13px; }
-.btn{ display:inline-block; padding:10px 16px; border-radius:10px; background:#f0f0f0; color:#111; text-decoration:none; font-weight:700; border:1px solid #e5e5e5; }
-.btn.cta{ background:#1f6fff; color:#fff; border-color:#1f6fff; }
-.card.highlight{ border-color:#d8e6ff; box-shadow:0 6px 16px rgba(31,111,255,.08); }
-.card.best .thumb{ background:linear-gradient(135deg,#ffeede,#fff7f0); color:#ff742c; }
-.card.popular .thumb{ background:linear-gradient(135deg,#e6f7ff,#eefcff); color:#1f6fff; }
-.ribbon{ position:absolute; top:-10px; left:-10px; background:#111; color:#fff; font-size:12px; padding:6px 10px; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,.12); letter-spacing:.3px; }
-.muted{ opacity:.9; }
-.note{ margin:10px 2px 0; color:#8a8a8a; font-size:12px; }
-@media (prefers-color-scheme: dark){
-  .bundle-pricing-780{ color:#222; } /* 고정 */
-}
-</style>
+</body>
+</html>
